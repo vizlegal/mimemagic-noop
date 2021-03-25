@@ -1,7 +1,9 @@
 # Mimemagic NOOP
 
-this is a gem with no functionality other them make your bundle work
-any call to mimemagic fill fail, this is just a blank gem to make your bundle work
+this is a gem with no functionality other them make your bundle dependecy tree work.
+
+any call to mimemagic fill fail, this is just a blank gem!
+only use if you don't actually need `mimemagic`
 
 with the removal of old version of https://github.com/minad/mimemagic
 some build have become impossible until https://github.com/rails/rails/issues/41750
