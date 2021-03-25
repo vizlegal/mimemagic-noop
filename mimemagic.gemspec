@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jakob Cosoroabă"]
   spec.email         = ["jakob@vizlegal.com"]
 
-  spec.summary       = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description   = "TODO: Write a longer description or delete this line."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "mimemagic dummy replacement"
+  spec.description   = "a dummy/noop version of mimemagic to make your bundle valid - no other functionality"
+  spec.homepage      = "https://github.com/vizlegal/mimemagic-noop"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
 
