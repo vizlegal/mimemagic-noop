@@ -1,38 +1,28 @@
-# Mimemagic
+# Mimemagic NOOP
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mimemagic`. To experiment with that code, run `bin/console` for an interactive prompt.
+this is a gem with no functionality other them make your bundle work
+any call to mimemagic fill fail, this is just a blank gem to make your bundle work
 
-TODO: Delete this and the text above, and describe your gem
+with the removal of old version of https://github.com/minad/mimemagic
+some build have become impossible until https://github.com/rails/rails/issues/41750
+as been addressed
 
-## Installation
+if you know you are not using activestorage, you can exclude that from bundle
+https://gist.github.com/mensfeld/3437de2fae7fc58faccbf28c2e825443
 
-Add this line to your application's Gemfile:
+but have depedencies that require `rails` it gets tricky
+this is where this gem comes in
 
-```ruby
-gem 'mimemagic'
+add this to your gemfile, to replace minemagic 0.3.5
+
 ```
+gem "mimemagic", git: "https://github.com/vizlegal/mimemagic-noop"
+```
+and run
 
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install mimemagic
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/mimemagic.
+```
+bundle update mimemagic
+```
 
 ## License
 
